@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in Js</title>
+</head>
+<body>
+    <script>
+function myCalulation(x, y) {
+    return (x+y)/3
+    // return x+y+z;
+    
+}
+const devide = (p, q)=>{
+    return p/q
+}
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+
+        console.log("The avg of a, b and c is ", myCalulation(a,b,c));
+        // console.log("The average of a, b and c is ", (a+b+c)/3);
+        console.log("The avg of  b and c is ", myCalulation(b,c));
+        console.log("The avg of a and c is ", myCalulation(a,c));
+        console.log(devide(30,3));
+
+
+        // Problem 1
+        let marks = {
+                    Umar: 90,
+                    gul: 67,
+                    Meer: 78
+                }
+                for(let i = 0; i<=Object.keys(marks).length; i++)  {
+                console.log("The marks of  " + Object.keys(marks)[i] +" are " + marks[Object.keys(marks)[i]] );
+            }
+
+
+                    // Problem 2
+
+            for( let key in marks) {
+                console.log("The marks of " + key +" are" + marks[key]);
+            }
+
+
+             // Problem 2
+            let cn = 50;
+            let i;
+            while (i != cn) {
+                console.log("try again");
+                i = prompt("Enter a number");
+
+            }
+            console.log("You have Entered a correct number");
+
+                    // Problem 3
+                    const mean = (a, b, c, d) => {
+                        return (a+b+c+d)/4
+                    }
+                    console.log("The mean is " + mean(4,5,6,7));
+
+
+    </script>
+</body>
+</html>

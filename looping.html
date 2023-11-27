@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>This is about loop in js</h1>
+
+
+    <script>
+        console.log("This is looping concept")
+
+        // let i = 0;
+        // // for(i-0; i<5; i++){
+        //     console.log(i)
+        // }
+
+        let books = ["English", "Urdu", "English"];
+        // for (let i = 0; i < books.length; i++) {
+        //     console.log("This is my fav book of " + books[i]);
+            
+        // }
+
+        books.forEach(function book(elements) {
+            console.log("This is my  " +elements +"  book");    
+        })
+
+        for(elements of books){
+            console.log("This is my  " +elements +"  book");    
+
+        }
+
+
+        let emp = {
+            name: "Umar",
+            salary: 23,
+            age: 23,
+        }
+        for(key in emp){
+            console.log(`This is ${key} of emp is ${emp[key]}`);
+            console.log(`this emp ${key} is ${emp[key]}`);
+        }
+
+        // while loop in js
+        let i = 4;
+        while(i <= 12){
+            console.log(`${i}  ia less tk`);
+            i++;
+        }
+
+                // do while loop in js
+                let j = 0;
+                do{
+                    console.log(`${j}  ia less tk`);
+            j++;
+                }
+                while(j <= 2);
+
+               
+    </script>
+</body>
+
+</html>
